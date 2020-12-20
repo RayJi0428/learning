@@ -1,7 +1,10 @@
 # 大綱
 ##### 運作流程
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
-
+##### 步驟
+[申請服務](https://github.com/RayJi0428/learning/tree/main/line_bot#%E7%94%B3%E8%AB%8B%E6%9C%8D%E5%8B%99)
+[自建server](https://github.com/RayJi0428/learning/tree/main/line_bot#%E5%BB%BA%E7%AB%8Bdjango%E5%B0%88%E6%A1%88)
+[回覆訊息](https://github.com/RayJi0428/learning/blob/main/line_bot/linebot_server/testapi/views.py)
 # 申請服務
 ##### 登入官網建立Provider
 https://developers.line.biz/zh-hant/
