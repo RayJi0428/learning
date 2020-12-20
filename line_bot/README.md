@@ -29,11 +29,8 @@ https://developers.line.biz/zh-hant/
 點選下方的Edit可以試試修改基本回應訊息
 
 ![](https://i.imgur.com/l6AWjgS.png)
-
 ![](https://i.imgur.com/sMnf0dT.png)
-
 ![](https://i.imgur.com/V1ifWcq.png)
-
 ![](https://i.imgur.com/ASgFESK.png)
 
 # 建立django專案
