@@ -1,6 +1,7 @@
-# 大綱
-##### 運作流程
+# 流程
+
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
+
 ##### 步驟
 
 [申請服務](https://github.com/RayJi0428/learning/tree/main/line_bot#%E7%94%B3%E8%AB%8B%E6%9C%8D%E5%8B%99)
