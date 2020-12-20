@@ -6,8 +6,8 @@ from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbid
 from django.views.decorators.csrf import csrf_exempt
 from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError, LineBotApiError
-from linebot.models import (MessageEvent,
-                            TextSendMessage, TextMessage, AudioSendMessage, LocationSendMessage, TemplateSendMessage, VideoSendMessage,
+from linebot.models import (MessageEvent, PostbackEvent,
+                            TextSendMessage, TextMessage, AudioSendMessage, LocationSendMessage, TemplateSendMessage, VideoSendMessage, StickerSendMessage, ImageSendMessage,
                             ButtonsTemplate,
                             PostbackAction, MessageAction, URIAction)
 
@@ -28,12 +28,24 @@ def callback(request):
             return HttpResponseBadRequest()
 
         for event in events:
-            if isinstance(event, MessageEvent):
+            if isinstance(event, PostbackEvent):
+                line_bot_api.reply_message(
+                    event.reply_token, TextSendMessage(text=str(event.postback.data)))
+
+            elif isinstance(event, MessageEvent):
                 if isinstance(event.message, TextMessage):
                     mtext = event.message.text
                     if mtext == '文字':
                         line_bot_api.reply_message(
                             event.reply_token, TextSendMessage(text="文字測試"))
+                    elif mtext == '貼圖':
+                        message = StickerSendMessage(
+                            package_id='1', sticker_id='1')
+                        line_bot_api.reply_message(event.reply_token, message)
+                    elif mtext == '圖片':
+                        message = ImageSendMessage(
+                            original_content_url='https://avatars3.githubusercontent.com/u/29451488?s=400&v=4', preview_image_url='https://avatars3.githubusercontent.com/u/29451488?s=400&v=4')
+                        line_bot_api.reply_message(event.reply_token, message)
                     elif mtext == '聲音':
                         message = AudioSendMessage(
                             original_content_url='https://57b33a613b19.ngrok.io/static/linebot_server/hello.m4a', duration=2000)
@@ -48,6 +60,12 @@ def callback(request):
                             '公司', '市政路386號', '24.159162090886316', '120.64025491140256', True)
                         line_bot_api.reply_message(
                             event.reply_token, message)
+                    elif mtext == '我要預約':
+                        line_bot_api.reply_message(
+                            event.reply_token, TextSendMessage(text="預約完成!消費共10萬元"))
+                    elif mtext == '傳送訊息':
+                        line_bot_api.reply_message(
+                            event.reply_token, TextSendMessage(text="Hi"))
                     elif mtext == '預約':
                         message = TemplateSendMessage(
                             alt_text='是否要預約一日男友?',
