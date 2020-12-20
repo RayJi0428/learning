@@ -1,26 +1,41 @@
-# 大綱
-##### 用途
-[create an anchor](##### 加入好友)
-##### 運作流程
+# 流程
+
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
+
+##### 步驟
+
+[申請服務](https://github.com/RayJi0428/learning/tree/main/line_bot#%E7%94%B3%E8%AB%8B%E6%9C%8D%E5%8B%99)
+
+[自建server](https://github.com/RayJi0428/learning/tree/main/line_bot#%E5%BB%BA%E7%AB%8Bdjango%E5%B0%88%E6%A1%88)
+
+[回覆訊息](https://github.com/RayJi0428/learning/blob/main/line_bot/linebot_server/testapi/views.py)
 
 # 申請服務
 ##### 登入官網建立Provider
 https://developers.line.biz/zh-hant/
+
 ![](https://i.imgur.com/Saa3yp9.png)
+
 ![](https://i.imgur.com/eKQeMbs.png)
+
 ![](https://i.imgur.com/Rv9533C.png)
 
 ##### 在Basic settings頁面紀錄Channel secret(之後要用)
+
 ![](https://i.imgur.com/RWDloEe.png)
+
 ##### 在Messaging API頁面生成Channel access token(之後要用)
+
 ![](https://i.imgur.com/Os3aU1y.png)
 
 ##### 加入好友
 申請完Channel後就可以用QRCode加入好友
+
 ![](https://i.imgur.com/WNHsweg.png)
+
 ##### 自動回應訊息設定
 點選下方的Edit可以試試修改基本回應訊息
+
 ![](https://i.imgur.com/l6AWjgS.png)
 ![](https://i.imgur.com/sMnf0dT.png)
 ![](https://i.imgur.com/V1ifWcq.png)
@@ -40,7 +55,7 @@ django-admin startproject linebot_server
 ##### 建立APP
 注意要在和manage.py同層目錄執行
 ```python
-python manage.py startapp appname
+python manage.py startapp testapi
 ```
 ##### 建立相關目錄
 - templates(html模板)
@@ -50,7 +65,8 @@ python manage.py startapp appname
 ```python
 python manage.py runserver
 ```
-啟動成功可連結http://127.0.0.1:8000/驗證是否正常
+啟動成功驗證是否正常 http://127.0.0.1:8000/
+
 ![](https://i.imgur.com/yJHl14h.png)
 
 ##### ngrok轉址
@@ -58,9 +74,13 @@ python manage.py runserver
 ```bash
 ngrok http 8000
 ```
+
 ![](https://i.imgur.com/1ZD1s6d.png)
+
 記得回到line網站設定Webhook URL、開啟Use webhook
+
 ![](https://i.imgur.com/hgZ28pL.png)
+
 ##### 環境設定
 ##### **`settings.py`**
 ###### 設定Channel access token, Channel secret
