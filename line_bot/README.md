@@ -57,7 +57,8 @@ python manage.py startapp appname
 ```python
 python manage.py runserver
 ```
-啟動成功可連結http://127.0.0.1:8000/驗證是否正常
+啟動成功驗證是否正常 http://127.0.0.1:8000/
+
 ![](https://i.imgur.com/yJHl14h.png)
 
 ##### ngrok轉址
@@ -65,6 +66,7 @@ python manage.py runserver
 ```bash
 ngrok http 8000
 ```
+
 ![](https://i.imgur.com/1ZD1s6d.png)
 
 記得回到line網站設定Webhook URL、開啟Use webhook
