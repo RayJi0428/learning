@@ -1,29 +1,39 @@
 # 大綱
-##### 用途
-[create an anchor](https://github.com/RayJi0428/learning/blob/main/line_bot/README.md#%E6%9B%B4%E5%A4%9A%E8%A8%8A%E6%81%AF%E7%A8%AE%E9%A1%9E%E8%AB%8B%E5%8F%83%E8%80%83%E5%AE%98%E6%96%B9%E6%96%87%E4%BB%B6)
 ##### 運作流程
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
 
 # 申請服務
 ##### 登入官網建立Provider
 https://developers.line.biz/zh-hant/
+
 ![](https://i.imgur.com/Saa3yp9.png)
+
 ![](https://i.imgur.com/eKQeMbs.png)
+
 ![](https://i.imgur.com/Rv9533C.png)
 
 ##### 在Basic settings頁面紀錄Channel secret(之後要用)
+
 ![](https://i.imgur.com/RWDloEe.png)
+
 ##### 在Messaging API頁面生成Channel access token(之後要用)
+
 ![](https://i.imgur.com/Os3aU1y.png)
 
 ##### 加入好友
 申請完Channel後就可以用QRCode加入好友
+
 ![](https://i.imgur.com/WNHsweg.png)
+
 ##### 自動回應訊息設定
 點選下方的Edit可以試試修改基本回應訊息
+
 ![](https://i.imgur.com/l6AWjgS.png)
+
 ![](https://i.imgur.com/sMnf0dT.png)
+
 ![](https://i.imgur.com/V1ifWcq.png)
+
 ![](https://i.imgur.com/ASgFESK.png)
 
 # 建立django專案
@@ -59,8 +69,11 @@ python manage.py runserver
 ngrok http 8000
 ```
 ![](https://i.imgur.com/1ZD1s6d.png)
+
 記得回到line網站設定Webhook URL、開啟Use webhook
+
 ![](https://i.imgur.com/hgZ28pL.png)
+
 ##### 環境設定
 ##### **`settings.py`**
 ###### 設定Channel access token, Channel secret
