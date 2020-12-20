@@ -1,6 +1,6 @@
 # 大綱
 ##### 用途
-[create an anchor](# ALLOWED_HOSTS)
+[create an anchor](https://github.com/RayJi0428/learning/blob/main/line_bot/README.md#%E6%9B%B4%E5%A4%9A%E8%A8%8A%E6%81%AF%E7%A8%AE%E9%A1%9E%E8%AB%8B%E5%8F%83%E8%80%83%E5%AE%98%E6%96%B9%E6%96%87%E4%BB%B6)
 ##### 運作流程
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
 
