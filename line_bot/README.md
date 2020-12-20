@@ -1,6 +1,6 @@
 # 大綱
 ##### 用途
-[create an anchor](##### 加入好友)
+[create an anchor](# ALLOWED_HOSTS)
 ##### 運作流程
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
 
