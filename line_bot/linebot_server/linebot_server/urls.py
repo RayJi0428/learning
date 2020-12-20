@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.conf.urls import url
+from testapi import views
 urlpatterns = [
+    url('^callback', views.callback), #設定callback對應
     path('admin/', admin.site.urls),
 ]

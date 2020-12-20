@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,11 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 't(my4gs^_w9)jucq8h0!a&4a9@ux5c%9-1vgp7s7wekm1(7#j-'
+LINE_CHANNEL_ACCESS_TOKEN = 'xXgby4yhdh4o2ewxz/ffG97hpuzYV/dfvtdMoguadthj0lA+YX7oyGN6bey2gLXpkCjWRlRn/U2pSiuHpBz2RT16y6lJuXRKUynhNxkFcx62xnbgDyPKwZLQEGZ8a9IMg7daFkzt3JMhLrq9WGyVTwdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_SECRET = 'ea033180a49d042e4f4ad9100a433b66'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'testapi', #新增的APP
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'linebot_server.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR), 'templates'], #templates路徑
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,9 +105,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hant' #繁體中文
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei' #台北時區
 
 USE_I18N = True
 
@@ -118,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'), #加入static路徑
+]

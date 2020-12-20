@@ -1,0 +1,4 @@
+line_bot/linebot_server/testapi/__pycache__/
+line_bot/linebot_server/testapi/migrations/__pycache__/
+line_bot/linebot_server/linebot_server/__pycache__/
+line_bot/linebot_server/ngrok.exe
