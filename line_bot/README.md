@@ -47,7 +47,7 @@ django-admin startproject linebot_server
 ##### 建立APP
 注意要在和manage.py同層目錄執行
 ```python
-python manage.py startapp appname
+python manage.py startapp testapi
 ```
 ##### 建立相關目錄
 - templates(html模板)
