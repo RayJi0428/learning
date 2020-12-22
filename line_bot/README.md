@@ -41,7 +41,9 @@ https://developers.line.biz/zh-hant/
 ![](https://i.imgur.com/V1ifWcq.png)
 ![](https://i.imgur.com/ASgFESK.png)
 
-# 建立django專案
+# 建立Django專案
+[Django介紹](https://developer.mozilla.org/zh-TW/docs/Learn/Server-side/Django/Introduction)
+
 ##### 安裝套件
 [line-bot-sdk](https://github.com/line/line-bot-sdk-python)
 ```bat
