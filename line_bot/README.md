@@ -1,3 +1,5 @@
+# 實例
+![](https://i.imgur.com/hOKTYkq.png)
 # 流程
 
 ![示意圖](https://developers.line.biz/assets/img/messaging-api-architecture.f40bffbb.png)
@@ -59,10 +61,13 @@ django-admin startproject linebot_server
 ```python
 python manage.py startapp testapi
 ```
-##### 建立相關目錄
+##### 在manage.py層建立相關目錄
 - templates(html模板)
 - static(django使用圖片,CSS,javascript..都在此目錄)
-
+##### 建立資料庫
+```python
+python manage.py migrate
+```
 ##### 啟動server
 ```python
 python manage.py runserver
@@ -85,8 +90,9 @@ ngrok http 8000
 
 ##### 環境設定
 ##### **`settings.py`**
-###### 設定Channel access token, Channel secret
+###### 新增變數Channel access token, Channel secret
 ```python
+import os
 LINE_CHANNEL_ACCESS_TOKEN = '使用者 Channel access token'
 LINE_CHANNEL_SECRET = 'Channel secret'
 ```
