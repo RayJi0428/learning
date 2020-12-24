@@ -22,11 +22,11 @@ https://developers.line.biz/zh-hant/
 
 ![](https://i.imgur.com/Rv9533C.png)
 
-##### 在Basic settings頁面紀錄Channel secret(之後要用)
+##### 紀錄 Basic settings/Channel secret(之後要用)
 
 ![](https://i.imgur.com/RWDloEe.png)
 
-##### 在Messaging API頁面生成Channel access token(之後要用)
+##### 紀錄 Messaging API/Channel access token(之後要用)
 
 ![](https://i.imgur.com/Os3aU1y.png)
 
@@ -44,6 +44,7 @@ https://developers.line.biz/zh-hant/
 ![](https://i.imgur.com/ASgFESK.png)
 
 # 建立Django專案
+[Django官網](https://www.djangoproject.com/)
 [Django介紹](https://developer.mozilla.org/zh-TW/docs/Learn/Server-side/Django/Introduction)
 
 ##### 安裝套件
@@ -69,14 +70,16 @@ python manage.py startapp testapi
 python manage.py migrate
 ```
 ##### 啟動server
+預設使用8000 port，可以在後面帶port號調整
 ```python
-python manage.py runserver
+python manage.py runserver 8000
 ```
 啟動成功驗證是否正常 http://127.0.0.1:8000/
 
 ![](https://i.imgur.com/yJHl14h.png)
 
 ##### ngrok轉址
+[ngrok](https://ngrok.com/)
 因為line只接受https，可以簡單使用ngrok.exe生成https網址
 ```bash
 ngrok http 8000
