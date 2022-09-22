@@ -1,10 +1,10 @@
 # 何謂 WebGL?
-## WebGL (Web Graphics Library)
+#### WebGL (Web Graphics Library)
 基於OpenGL ES 2.0的JavaScript操作OpenGL的API
 
 # 何謂 OpenGL?
-## OpenGL (Open Graphics Library)
-## OpenGL ES (針對行動裝置較輕量的OpenGL特殊版)
+#### OpenGL (Open Graphics Library)
+#### OpenGL ES (針對行動裝置較輕量的OpenGL特殊版)
 操作硬體資源的API
 
 # OpenGL上下文(Context)
@@ -12,20 +12,23 @@
 
 ## 
 # CPU vs GPU
-## 依照不同任務需求，交給CPU或GPU處理
-## CPU (Central Processing Unit) 中央處理器
+#### 依照不同任務需求，交給CPU或GPU處理
+#### CPU (Central Processing Unit) 中央處理器
 電腦的心臟(射速快的機關槍)
   
 ![Imgur](https://i.imgur.com/Y7rPVxM.gif)
 
-## GPU (Graphics Processing Unit) 圖形處理器
+#### GPU (Graphics Processing Unit) 圖形處理器
 顯示卡的心臟(射速慢，但彈丸數量相當多的霰彈槍)
   
 ![Imgur](https://i.imgur.com/HV4TpeX.gif)
 
 # 網頁與WebGL
-- 透過canvas取得OpenGL上下文(Context)
-  
+透過canvas取得OpenGL上下文(Context)
+
+# 一般開發者?
+### RD->引擎->WebGL->OpenGL->GPU->顯示器
+
 ![Imgur](https://i.imgur.com/pvV09Pp.jpg)
 
 # WebGL Context Lost 可能原因？
@@ -41,3 +44,5 @@ https://zhuanlan.zhihu.com/p/56693625
 https://zhuanlan.zhihu.com/p/337561969
 
 https://ithelp.ithome.com.tw/articles/10217819
+
+https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost
