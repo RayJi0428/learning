@@ -1,3 +1,6 @@
+# 開發者與WebGL
+### RD->引擎->WebGL->OpenGL->GPU->顯示器
+
 # 何謂 WebGL?
 #### WebGL (Web Graphics Library)
 基於OpenGL ES 2.0的JavaScript操作OpenGL的API
@@ -26,9 +29,6 @@
 [gif](https://i.imgur.com/HV4TpeX.gif)
 # 網頁與WebGL
 透過canvas取得OpenGL上下文(Context)
-
-# 一般開發者?
-### RD->引擎->WebGL->OpenGL->GPU->顯示器
 
 ![Imgur](https://i.imgur.com/pvV09Pp.jpg)
 
