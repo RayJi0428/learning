@@ -21,7 +21,7 @@
 #### GPU (Graphics Processing Unit) 圖形處理器
 顯示卡的心臟(射速慢，但彈丸數量相當多的霰彈槍)
   
-![Imgur](https://i.imgur.com/HV4TpeX.gif)
+![Imgur](https://eia.github.io/ironman/2020/d-4/gpu.gif)
 
 # 網頁與WebGL
 透過canvas取得OpenGL上下文(Context)
