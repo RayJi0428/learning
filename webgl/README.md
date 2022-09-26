@@ -7,7 +7,7 @@
 
 # 何謂 OpenGL?
 #### OpenGL (Open Graphics Library)
-#### OpenGL ES (針對行動裝置較輕量的OpenGL特殊版)
+#### OpenGL ES(OpenGL for Embedded Systems)(針對行動裝置較輕量的OpenGL特殊版)
 操作硬體資源的API
 
 # OpenGL上下文(Context)
