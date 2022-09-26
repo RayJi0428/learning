@@ -47,3 +47,4 @@ https://zhuanlan.zhihu.com/p/337561969
 https://ithelp.ithome.com.tw/articles/10217819
 
 https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost
+https://pcgoto.com/gpu-more-important-or-ram/
