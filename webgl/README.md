@@ -18,11 +18,15 @@
 #### 依照不同任務需求，交給CPU或GPU處理
 #### CPU (Central Processing Unit) 中央處理器
 電腦的心臟(射速快的機關槍)
-  
+
+適合處理邏輯
+
 ![Imgur](https://i.imgur.com/Y7rPVxM.gif)
 
 #### GPU (Graphics Processing Unit) 圖形處理器
 顯示卡的心臟(射速慢，但彈丸數量相當多的霰彈槍)
+
+適合處理計算(Shader盡量不寫if...else因為很慢)
 
 ![Imgur](https://i.imgur.com/4a8mwAv.png)
 
