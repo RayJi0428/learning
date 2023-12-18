@@ -58,12 +58,19 @@
 - 如果遊戲引擎只處理webgl2寫法,那也改不回webgl
 
 # 參考文獻
-https://zhuanlan.zhihu.com/p/56693625
+[20分钟让你了解OpenGL](https://zhuanlan.zhihu.com/p/56693625)
 
-https://zhuanlan.zhihu.com/p/337561969
+[WebGL浅入浅出，不深入了解一下吗？](https://zhuanlan.zhihu.com/p/337561969)
 
-https://ithelp.ithome.com.tw/articles/10217819
+[為什麼 WebGL 的效能這麼強？](https://ithelp.ithome.com.tw/articles/10217819)
 
-https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost
+[WebGLRenderingContext](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost)
 
-https://pcgoto.com/gpu-more-important-or-ram/
+[Is GPU More Important than RAM Memory?](https://pcgoto.com/gpu-more-important-or-ram/)
+
+[WebGL WIKI](https://en.wikipedia.org/wiki/WebGL)
+
+[WebGL2 from WebGL1](https://webgl2fundamentals.org/webgl/lessons/webgl1-to-webgl2.html)
+
+[WebGL2有什么新内容](https://webgl2fundamentals.org/webgl/lessons/zh_cn/webgl2-whats-new.html)
+
