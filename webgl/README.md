@@ -46,8 +46,10 @@
 # WebGL運作
 1.沒有WebGL
 ![](./before.png)
+
 2.WebGL協定
 ![](./after.png)
+
 3.webGL2
 - 100%向下相容、原本選配變成標配
 - webgl(openGL ES2), webgl2(openGL ES3)shader寫法調整
