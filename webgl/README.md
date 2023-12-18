@@ -43,6 +43,16 @@
 
 - 電腦有多種GPU，切換時也會丟失。 
 
+# WebGL運作
+1.沒有WebGL
+![](./before.png)
+2.WebGL協定
+![](./after.png)
+3.webGL2
+- 100%向下相容、原本選配變成標配
+- webgl(openGL ES2), webgl2(openGL ES3)shader寫法調整
+- 如果遊戲引擎只處理webgl2寫法,那也改不回webgl
+
 # 參考文獻
 https://zhuanlan.zhihu.com/p/56693625
 
